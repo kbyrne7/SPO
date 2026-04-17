@@ -18,7 +18,6 @@ More information about the configuration can be found in the following Microsoft
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
 $aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
 $applicationId = "" # Application (Client) ID
-$applicationSec= "" # App Registration sec
 $tenantId = "" # Directory (Tenant) ID
 $sharePointOnlineEndpoint = "https://printricityspo.sharepoint.com/sites/aisearchdemo/" # URL of SharePoint site that can be retrieved from SharePoint admin center under "Site address": https://contoso.sharepoint.com/sites/contosoITOpenAI
 $sharePointLibrary = "https://printricityspo.sharepoint.com/sites/aisearchdemo/Shared%20Documents/Forms/AllItems.aspx" # URL of document library (ending with AllItems.aspx) that can be retrieved by clicking on the "Documents" menu on the left pane: https://contoso.sharepoint.com/sites/contosoITOpenAI/Shared%20Documents/Forms/AllItems.aspx
@@ -26,7 +25,7 @@ $sharePointLibrary = "https://printricityspo.sharepoint.com/sites/aisearchdemo/S
 
 $aiSearchDatasourceName = "datasourceaispo" # Datasource logical name (what will be displayed in the data source blade)
 
-$connectionString = "SharePointOnlineEndpoint=$sharePointOnlineEndpoint;ApplicationId=$applicationId;ApplicationSecret=$applicationSecret;TenantId=$tenantId"
+$connectionString = "SharePointOnlineEndpoint=$sharePointOnlineEndpoint;ApplicationId=$applicationId;TenantId=$tenantId"
 
 $containerName = "defaultSiteLibrary" # Leave this value as is
 $containerQuery = "includeLibrary=$sharePointLibrary"

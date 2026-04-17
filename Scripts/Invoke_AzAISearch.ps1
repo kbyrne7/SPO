@@ -16,10 +16,10 @@ More information about the configuration can be found in the following Microsoft
 
 # Define variables that will be used to call the REST API
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
-$aiSearchAPIKey = "zf4Nm8j4eKUR8Bdqpy7XuLXrRBDlpWoKwpis2Hqc3FAzSeBOkQvc" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
-$applicationId = "0c181f77-a510-41a6-a2b1-f2038bd12836" # Application (Client) ID
-$applicationSecret = "ugN8Q~Z61d-XGUPsQMygzIPsA0vqhQUwf7tGSdeo" # App Registration secret
-$tenantId = "6629fa49-afc1-4204-b300-beffa343efd3" # Directory (Tenant) ID
+$aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
+$applicationId = "" # Application (Client) ID
+$applicationSecret = "" # App Registration secret
+$tenantId = "" # Directory (Tenant) ID
 $sharePointOnlineEndpoint = "https://printricityspo.sharepoint.com/sites/aisearchdemo/" # URL of SharePoint site that can be retrieved from SharePoint admin center under "Site address": https://contoso.sharepoint.com/sites/contosoITOpenAI
 $sharePointLibrary = "https://printricityspo.sharepoint.com/sites/aisearchdemo/Shared%20Documents/Forms/AllItems.aspx" # URL of document library (ending with AllItems.aspx) that can be retrieved by clicking on the "Documents" menu on the left pane: https://contoso.sharepoint.com/sites/contosoITOpenAI/Shared%20Documents/Forms/AllItems.aspx
 # $additionalColumns = "" Any additional columns that were created in the document library, "Published" is just an example provided
@@ -64,7 +64,7 @@ $json
 ########################### Configure Index ########################################
 
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
-$aiSearchAPIKey = "zf4Nm8j4eKUR8Bdqpy7XuLXrRBDlpWoKwpis2Hqc3FAzSeBOkQvc"  # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
+$aiSearchAPIKey = ""  # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
 $apiVersion = "2023-10-01-Preview" # Define the version of API to call
 $aiSearchIndexName = "sharepoint-policies-index" # Index logical name (what will be displayed in the indexes blade)
 #$customColumn = "" # Custom column that was created in the document library
@@ -103,7 +103,7 @@ $json
 ########################### Configure Indexer ########################################
 
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
-$aiSearchAPIKey = "zf4Nm8j4eKUR8Bdqpy7XuLXrRBDlpWoKwpis2Hqc3FAzSeBOkQvc" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
+$aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
 $apiVersion = "2023-10-01-Preview" # Define the version of API to call
 $aiSearchIndexerName = "sharepoint-policies-indexer"
 $aiSearchDatasourceName = "datasourceaispo" # Datasource logical name that was created earlier
@@ -155,7 +155,7 @@ $json
 ########################### Get Indexer ########################################
 
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
-$aiSearchAPIKey = "zf4Nm8j4eKUR8Bdqpy7XuLXrRBDlpWoKwpis2Hqc3FAzSeBOkQvc" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
+$aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
 $apiVersion = "2023-10-01-Preview" # Define the version of API to call
 $aiSearchIndexerName = "sharepoint-policies-indexer"
 $aiSearchDatasourceName = "datasourceaispo" # Datasource logical name that was created earlier

@@ -1,0 +1,41 @@
+**********************
+PowerShell transcript start
+Start time: 20260416091234
+Username: SPOVM\kbyrne
+RunAs User: SPOVM\kbyrne
+Configuration Name: 
+Machine: SPOVM (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -WorkingDirectory ~
+Process ID: 4240
+PSVersion: 7.6.0
+PSEdition: Core
+GitCommitId: 7.6.0
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is /Users/kbyrne/Documents/Project/SPO Audit\Site_Audit_Log.txt
+https://printricityspo.sharepoint.com/sites/aisearchdemo
+All files will be processed
+Exporting site details for  to CSV
+PS>TerminatingError(Export-Csv): "Could not find a part of the path 'C:\Users\kbyrne\Documents\Project\SPO Audit\Scripts\Sites.csv'."
+Export-Csv: C:\Users\kbyrne\Documents\Project\Invoke_AuditSPO.ps1:122
+Line |
+ 122 |  …      $exportData    | Export-Csv -Path $outputPath -NoTypeInformation
+     |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Could not find a part of the path 'C:\Users\kbyrne\Documents\Project\SPO Audit\Scripts\Sites.csv'.
+Export-Csv: C:\Users\kbyrne\Documents\Project\Invoke_AuditSPO.ps1:122
+Line |
+ 122 |  …      $exportData    | Export-Csv -Path $outputPath -NoTypeInformation
+     |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Could not find a part of the path 'C:\Users\kbyrne\Documents\Project\SPO Audit\Scripts\Sites.csv'.
+
+Processing CSV all site files /Users/kbyrne/Documents/Project/SPO Audit\Scripts\Sites.csv
+No. of files downloaded for web  - 0
+**********************
+PowerShell transcript end
+End time: 20260416091237
+**********************

@@ -1,0 +1,20 @@
+{
+  "@odata.context": "https://aisearchkbyrne.search.windows.net/$metadata#datasources/$entity",
+  "@odata.etag": "\"0x8DEA45930BE45D3\"",
+  "name": "datasourceainew",
+  "description": null,
+  "type": "sharepoint",
+  "subtype": null,
+  "indexerPermissionOptions": [],
+  "credentials": {
+    "connectionString": "SharePointOnlineEndpoint=https://printricityspo.sharepoint.com/sites/aisearchdemo/;ApplicationId=0c181f77-a510-41a6-a2b1-f2038bd12836;ApplicationSecret=...;TenantId=6629fa49-afc1-4204-b300-beffa343efd3;"
+  },
+  "container": {
+    "name": "defaultSiteLibrary",
+    "query": "includeLibrary=https://printricityspo.sharepoint.com/sites/aisearchdemo/Shared%20Documents/"
+  },
+  "dataChangeDetectionPolicy": null,
+  "dataDeletionDetectionPolicy": null,
+  "encryptionKey": null,
+  "identity": null
+}

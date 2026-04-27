@@ -1,0 +1,34 @@
+{
+  "@odata.context": "https://aisearchkbyrne.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DEA45EF261B2F0\"",
+  "name": "sharepoint-policies-indexer-new",
+  "description": null,
+  "dataSourceName": "datasourceainew",
+  "skillsetName": null,
+  "targetIndexName": "sharepoint-policies-index-new",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "configuration": {
+      "indexedFileNameExtensions": "",
+      "excludedFileNameExtensions": "",
+      "dataToExtract": "contentAndMetadata"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_spo_site_library_item_id",
+      "targetFieldName": "id",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    }
+  ],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

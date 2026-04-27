@@ -1,0 +1,55 @@
+{
+  "name": "sharepoint-policies-index-new",
+  "fields": [
+    { "name": "id", "type": "Edm.String", "key": true, "searchable": false },
+
+    { "name": "title", "type": "Edm.String", "searchable": true },
+    { "name": "content", "type": "Edm.String", "searchable": true },
+
+    // ---------------------------------------------
+    // FUTURE VECTOR FIELD (only add after upgrading)
+    // ---------------------------------------------
+    // {
+    //   "name": "contentVector",
+    //   "type": "Collection(Edm.Single)",
+    //   "searchable": false,
+    //   "filterable": false,
+    //   "sortable": false,
+    //   "facetable": false,
+    //   "dimensions": 1536,
+    //   "vectorSearchDimensions": 1536,
+    //   "vectorSearchProfile": "my-vector-profile"
+    // },
+    // ---------------------------------------------
+
+    { "name": "metadata_spoItemId", "type": "Edm.String" },
+    { "name": "metadata_spoSitePath", "type": "Edm.String" },
+    { "name": "metadata_spoLibraryPath", "type": "Edm.String" }
+  ],
+
+  // ---------------------------------------------
+  // FUTURE VECTOR SEARCH CONFIG (safe to store)
+  // ---------------------------------------------
+  // "vectorSearch": {
+  //   "profiles": [
+  //     {
+  //       "name": "my-vector-profile",
+  //       "algorithm": "hnsw"
+  //     }
+  //   ],
+  //   "algorithms": [
+  //     {
+  //       "name": "hnsw",
+  //       "kind": "hnsw"
+  //     }
+  //   ]
+  // },
+  // ---------------------------------------------
+
+  "suggesters": [
+    {
+      "name": "sg",
+      "sourceFields": ["title", "content"]
+    }
+  ]
+}

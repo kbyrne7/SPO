@@ -1,0 +1,15 @@
+//run in std cmd line console -see: https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment
+//install node.js first
+//Install dependencies incl ms generator
+npm install @rushstack/heft yo @microsoft/generator-sharepoint --global
+//install heft toolchain replacement
+npm install @rushstack/heft --global
+//install yeoman scafolding projects
+npm install yo --global
+//IMPORTANT Install following project creation... trust local cert for heft -- https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment#trusting-the-self-signed-developer-certificate
+//see: https://learn.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part
+yo @microsoft/sharepoint
+//install npm node modules in project root
+npm install
+npx @microsoft/sp-build-web trust-dev-cert
+

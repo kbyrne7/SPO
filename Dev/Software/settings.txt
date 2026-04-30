@@ -1,0 +1,4 @@
+root: C:\Users\kbyrne\Documents\Project\Dev\Software 
+path: C:\Program Files\nodejs 
+arch: 64 
+proxy: none

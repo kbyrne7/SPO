@@ -16,11 +16,7 @@ More information about the configuration can be found in the following Microsoft
 
 # Define variables that will be used to call the REST API
 $aiSearchserviceName = "aisearchkbyrne" # AI Search logical name
-<<<<<<< HEAD
-$aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
-=======
-$aiSearchAPIKey = "" # AI Search API Key (AI Serach > Keys > API keys > Primary admin key)
->>>>>>> 12d721b47e6bf7dcc57f4a13e6b68792ec8e49ca
+$aiSearchAPIKey = "" # AI Search API Key (AI Search > Keys > API keys > Primary admin key)
 $applicationId = "0c181f77-a510-41a6-a2b1-f2038bd12836" # Application (Client) ID
 $applicationSecret = "" # App Registration secret
 $tenantId = "6629fa49-afc1-4204-b300-beffa343efd3" # Directory (Tenant) ID

@@ -202,8 +202,3 @@ $headers = @{
 
 # Call the REST API to get the indexer details
 $json = Invoke-RestMethod -Method GET -Uri $url -Headers $headers -Body $body -Verbose
-<<<<<<< HEAD
-$json
-=======
-$json
->>>>>>> 12d721b47e6bf7dcc57f4a13e6b68792ec8e49ca
